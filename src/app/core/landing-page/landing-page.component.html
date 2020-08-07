@@ -1,0 +1,14 @@
+    <h1>Wellcome to Forex Trading</h1>
+
+    <div class="currency-container" *ngIf="isDataLoaded">
+        <section *ngFor="let item of this.data.rates | keyvalue">
+            <div class="currency-section">
+                <p>{{data.base}}{{item.key}}</p>
+                <p>EURO / U.S. DOLLAR</p>
+            </div>
+            <p [ngClass]="{'price': true, 'price-up': this.counter % 2 !== 0, 'price-down': this.counter % 2 === 0}">
+                {{item.value.toFixed(4)}}
+            </p>
+        </section>
+    </div>
+

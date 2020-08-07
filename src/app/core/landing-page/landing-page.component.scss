@@ -1,0 +1,36 @@
+*{
+    font-family: 'Roboto', sans-serif;
+   
+}
+h1{
+    margin:80px auto;
+    text-align: center;
+    font-weight: normal;
+}
+.currency-container {
+    margin: 90px auto;
+    width: 500px;
+    section {
+        display: flex;
+
+        .currency-section{
+            width: 250px;
+        }
+        .price{
+            margin-left: 30%;
+        }
+   
+        .price-up {
+            background-color: #00b33c;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .price-down {
+            background-color:  #ff4d4d;
+            width: fit-content;
+            height: fit-content;
+        }
+
+    }
+}
